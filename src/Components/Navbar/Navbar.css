@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #333333;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.navbar .logo {
+  color: wheat;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: wheat;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.navbar ul li a:hover {
+  text-decoration: underline;
+  color: rgb(41, 129, 41);
+}
